@@ -1,11 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     const tabs = document.querySelectorAll('.tabheader__item'),
-          tabsContect = document.querySelectorAll('.tabcontect'),
+          tabsContent = document.querySelectorAll('.tabcontent'),
           tabsParent = document.querySelector('.tabheader__items');
 
     function hideTabContent() {
-        tabsContect.forEach(item => {
+        tabsContent.forEach(item => {
             item.style.display = 'none';
         });
 
@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function showTabContent(i) {
-        tabsContect[i].style.display = 'block';
+        tabsContent[i].style.display = 'block';
         tabs[i].classList.add('tabheader__item_active');
     }
 
